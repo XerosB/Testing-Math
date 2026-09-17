@@ -37,7 +37,7 @@ public class TestingMath {
             "4, 1"
     })
     public void testReciprocal(double base, double exponent){
-
+        assertEquals((1 / Math.pow(base, exponent)), Math.pow(base, (-1 * exponent)), "x^-a does not equal 1/x^a");
     }
 
     @ParameterizedTest
