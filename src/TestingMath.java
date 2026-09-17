@@ -5,6 +5,9 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestingMath {
+    public static void main(String[] args){
+        testReciprocal.(2.0, 1.0);
+    }
     @ParameterizedTest
     @CsvSource({
             "6, 5",
@@ -94,7 +97,7 @@ public class TestingMath {
             "-7.4, -8.3, -9.2"
     })
     public void testNestedPowers(double base, double a, double b){
-
+        assertEquals(Math.pow(base, (a * b)), Math.pow(Math.pow(base, a), b), "x^a^b does not equal x^a*b");
     }
 
     @ParameterizedTest
