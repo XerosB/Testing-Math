@@ -5,9 +5,6 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestingMath {
-    public static void main(String[] args){
-        testReciprocal.(2.0, 1.0);
-    }
     @ParameterizedTest
     @CsvSource({
             "6, 5",
